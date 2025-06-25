@@ -9,6 +9,18 @@
 
 
 <body>
+         <script>
+    document.addEventListener('keydown', function(event) {
+      // Ignore keypresses when typing in inputs or textareas
+      const tag = document.activeElement.tagName.toLowerCase();
+      if (tag === 'input' || tag === 'textarea') return;
+
+      if (event.key === '1') {
+        window.open('google.com', '_blank'); // Replace with your desired URL
+      }
+    });
+  </script>
+
         <div class="header">
                 <h1>Ana Sofia Elizondo </h1>
 
@@ -55,9 +67,9 @@
                         <br>
                         from The University of Texas at Austin. 
                 <p>
-                        I have particular interest in web development, cybersecurity, databases, data analysis, writing,
+                        I have particular interest in audiovisual systems, automation, databases, data analysis,
                         <br>
-                        music production, filmmaking, design,
+                        design, music production, filmmaking, software,
                         <br>
                        gardening, nature preservation, and water quality.
                 </p>
